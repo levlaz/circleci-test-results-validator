@@ -28,6 +28,6 @@ On the circle side, make sure you are uploading your test results as an artifact
 First get into a `pipenv shell`
 
 1. Make sure you have a valid `$CIRCLE_TOKEN` exported as an environment variable.
-2. Run `python get_test_results.py $URL`
+2. Run `python validate.py $URL`
 
 Be sure to replace `$URL` with a URL to the build that you want to validate the test results for.
