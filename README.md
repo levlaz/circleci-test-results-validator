@@ -1,5 +1,4 @@
-![CircleCI](https://img.shields.io/circleci/build/github/levlaz/circleci-test-results-validator)
-![Docker Automated build](https://img.shields.io/docker/automated/levlaz/circleci-test-results-validator)
+[![Docker Automated build](https://img.shields.io/docker/automated/levlaz/circleci-test-results-validator)](https://cloud.docker.com/repository/docker/levlaz/circleci-test-results-validator/)
 
 # CircleCI Test Results Validator
 
