@@ -1,3 +1,6 @@
+![CircleCI](https://img.shields.io/circleci/build/github/levlaz/circleci-test-results-validator)
+![Docker Automated build](https://img.shields.io/docker/automated/levlaz/circleci-test-results-validator)
+
 # CircleCI Test Results Validator
 
 If you are [uploading test results to CircleCI](https://circleci.com/docs/2.0/language-python/#upload-and-store-test-results) but they are not showing up in the dashboard, then the most common cause is that the xml file that you are uploading to the test results service is not valid Junit Style XML.
