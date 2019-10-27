@@ -4,8 +4,9 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 RUN apk -U add python3-dev py-pip nodejs nodejs-npm openjdk8
-RUN pip install pipenv 
 
 COPY . /usr/src/app
-RUN pipenv install 
+RUN pip install -r requirements.txt 
 RUN npm install
+
+ENTRYPOINT ["sh", "-c", "python validate.py $URL"]

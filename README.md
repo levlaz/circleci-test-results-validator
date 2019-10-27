@@ -6,7 +6,17 @@ This utility can be used to easily validate that the test results that you are u
 
 ## Usage
 
-### Requirements
+On the circle side, make sure you are uploading your test results as an artifact.
+
+### Running with Docker 
+
+The simplest way to to use this tool is to use the pre-built docker container. 
+
+```
+docker run -e "CIRCLE_TOKEN=$YOUR_CIRCLECI_API_TOKEN" -e "URL=$YOUR_BUILD_URL" levlaz/circleci-test-results-valdiator
+```
+
+### Running Manually 
 
 Right now this is kind of a hodge podge of things.
 
@@ -18,14 +28,8 @@ To install everything do this:
 
 ```
 npm install
-pipenv install
+pip install -r requirements.txt
 ```
-
-On the circle side, make sure you are uploading your test results as an artifact.
-
-### Running the Validator
-
-First get into a `pipenv shell`
 
 1. Make sure you have a valid `$CIRCLE_TOKEN` exported as an environment variable.
 2. Run `python validate.py $URL`
